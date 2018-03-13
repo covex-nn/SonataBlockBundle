@@ -200,6 +200,8 @@ class SonataBlockExtension extends Extension
                 $contexts[$context][] = $service;
             }
         }
+
+        $container->setParameter('sonata.block.default_contexts', $defaults);
     }
 
     /**
